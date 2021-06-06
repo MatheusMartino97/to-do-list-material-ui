@@ -1,5 +1,14 @@
 import React from 'react';
-import { TextField, Container, Button, RadioGroup, FormControlLabel, Radio } from '@material-ui/core';
+import {
+  TextField,
+  Container,
+  Button,
+  RadioGroup,
+  FormControlLabel,
+  Radio,
+  FormControl,
+  FormLabel,
+} from '@material-ui/core';
 
 export default function Form({
   inputClass,
@@ -7,7 +16,7 @@ export default function Form({
   handleDetailsChange,
   handleCategoryChange,
   handleSubmit,
-  useCategory
+  useCategory,
 }) {
   return (
     <>
@@ -29,14 +38,41 @@ export default function Form({
             multiline
             rows={4}
           />
-          <RadioGroup onChange={ (event) => handleCategoryChange(event) } value={ useCategory }>
-            <FormControlLabel value="academico" control={ <Radio /> } label="Acadêmico" />
-            <FormControlLabel value="tarefa" control={ <Radio /> } label="Tarefa" />
-            <FormControlLabel value="lembrete" control={ <Radio /> } label="Lembrete" />
-            <FormControlLabel value="trabalho" control={ <Radio /> } label="Trabalho" />
-            
-          </RadioGroup>
-          <Button type="submit" variant="contained" color="primary" onClick={ (event) => handleSubmit(event) }>
+
+          <FormControl className={inputClass}>
+              <FormLabel>Categoria</FormLabel>
+              <RadioGroup
+                onChange={(event) => handleCategoryChange(event)}
+                value={useCategory}
+              >
+                <FormControlLabel
+                  value="academico"
+                  control={<Radio />}
+                  label="Acadêmico"
+                />
+                <FormControlLabel
+                  value="tarefa"
+                  control={<Radio />}
+                  label="Tarefa"
+                />
+                <FormControlLabel
+                  value="lembrete"
+                  control={<Radio />}
+                  label="Lembrete"
+                />
+                <FormControlLabel
+                  value="trabalho"
+                  control={<Radio />}
+                  label="Trabalho"
+                />
+              </RadioGroup>
+          </FormControl>
+          <Button
+            type="submit"
+            variant="contained"
+            color="primary"
+            onClick={(event) => handleSubmit(event)}
+          >
             Adicionar
           </Button>
         </form>
