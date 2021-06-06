@@ -124,8 +124,8 @@ export default function Notes() {
             </Accordion>
           ))}
       </Container>
-      {JSON.parse(localStorage.getItem('todos')) &&
-      !JSON.parse(localStorage.getItem('todos')).length ? (
+      {(JSON.parse(localStorage.getItem('todos')) &&
+      !JSON.parse(localStorage.getItem('todos')).length) || !JSON.parse(localStorage.getItem('todos')) ? (
         <Redirect to="/add-note" />
       ) : null}
     </>

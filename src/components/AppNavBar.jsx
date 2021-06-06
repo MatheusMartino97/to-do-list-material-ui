@@ -86,15 +86,18 @@ export default function AppNavBar({ pageTitle, search, handleSearchChange }) {
   const history = useHistory();
   const classes = useStyles();
 
-  const handleItemClick = (path) => {
+  const handleItemClick = (path, text) => {
     history.push(path);
     setDrawerState(false);
 
-    if (
-      JSON.parse(localStorage.getItem('todos')) &&
-      !JSON.parse(localStorage.getItem('todos')).length
-    )
-      alert('Você ainda não possui lembretes.');
+    if (text === 'Lembretes') {
+      if (
+        (JSON.parse(localStorage.getItem('todos')) &&
+          !JSON.parse(localStorage.getItem('todos')).length) ||
+        !JSON.parse(localStorage.getItem('todos'))
+      )
+        alert('Você ainda não possui lembretes.');
+    }
   };
 
   const itemsList = [
@@ -113,7 +116,7 @@ export default function AppNavBar({ pageTitle, search, handleSearchChange }) {
   const list = () => (
     <List>
       {itemsList.map(({ text, icon, path }) => (
-        <ListItem button key={path} onClick={() => handleItemClick(path)}>
+        <ListItem button key={path} onClick={() => handleItemClick(path, text)}>
           <ListItemText primary={text} />
           <ListItemIcon className={classes.itemIcon}>{icon}</ListItemIcon>
         </ListItem>
