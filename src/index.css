@@ -8,6 +8,11 @@ body {
   background-color: rgb(185, 194, 211);
 }
 
+*::-webkit-scrollbar {
+  display: none;
+}
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

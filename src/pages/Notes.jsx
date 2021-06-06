@@ -32,15 +32,13 @@ const useStyles = makeStyles((theme) => ({
 
   details: {
     // flexGrow: 1,
-    // overflow: 'scroll',
-    // textOverflow: 'scroll',
+    overflow: 'scroll',
     wordWrap: 'brack-word',
     width: '100%',
   },
 
   accordion: {
-    // overflow: 'scroll',
-    // textOverflow: 'scroll',
+    overflow: 'scroll',
     wordWrap: 'brack-word',
   },
 }));
@@ -87,7 +85,6 @@ export default function Notes() {
   return (
     <>
       <AppNavBar
-        pageTitle="LISTA DE TAREFAS"
         search={true}
         handleSearchChange={handleSearchChange}
       />

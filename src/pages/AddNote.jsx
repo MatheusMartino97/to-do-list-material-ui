@@ -20,7 +20,7 @@ export default function AddNote() {
   const classes = useStyles();
 
   const handleTitleChange = ({ target: { value } }) => {
-    if (value.length < 50) setTitle(value);
+    if (value.length < 15) setTitle(value);
   };
 
   const handleDetailsChange = ({ target: { value } }) => {
