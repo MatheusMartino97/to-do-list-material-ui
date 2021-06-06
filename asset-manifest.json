@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/to-do-list-material-ui/static/css/main.47946af0.chunk.css",
-    "main.js": "/to-do-list-material-ui/static/js/main.2aaa0628.chunk.js",
-    "main.js.map": "/to-do-list-material-ui/static/js/main.2aaa0628.chunk.js.map",
+    "main.css": "/to-do-list-material-ui/static/css/main.c05e40b6.chunk.css",
+    "main.js": "/to-do-list-material-ui/static/js/main.dd40a2c7.chunk.js",
+    "main.js.map": "/to-do-list-material-ui/static/js/main.dd40a2c7.chunk.js.map",
     "runtime-main.js": "/to-do-list-material-ui/static/js/runtime-main.90934a52.js",
     "runtime-main.js.map": "/to-do-list-material-ui/static/js/runtime-main.90934a52.js.map",
     "static/js/2.80d70988.chunk.js": "/to-do-list-material-ui/static/js/2.80d70988.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.7d21c37b.chunk.js": "/to-do-list-material-ui/static/js/3.7d21c37b.chunk.js",
     "static/js/3.7d21c37b.chunk.js.map": "/to-do-list-material-ui/static/js/3.7d21c37b.chunk.js.map",
     "index.html": "/to-do-list-material-ui/index.html",
-    "static/css/main.47946af0.chunk.css.map": "/to-do-list-material-ui/static/css/main.47946af0.chunk.css.map",
+    "static/css/main.c05e40b6.chunk.css.map": "/to-do-list-material-ui/static/css/main.c05e40b6.chunk.css.map",
     "static/js/2.80d70988.chunk.js.LICENSE.txt": "/to-do-list-material-ui/static/js/2.80d70988.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.90934a52.js",
     "static/js/2.80d70988.chunk.js",
-    "static/css/main.47946af0.chunk.css",
-    "static/js/main.2aaa0628.chunk.js"
+    "static/css/main.c05e40b6.chunk.css",
+    "static/js/main.dd40a2c7.chunk.js"
   ]
 }
